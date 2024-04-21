@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a539adc7a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" alt="">
+                <ul id="side-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars " onclick="openMenu()"></i>
+            </nav>
+            <div class="header">
+                <div class="text">
+                    <p>Fresh Frontend Developer</p>
+                    <h1><span>welcome!</span><br>
+                        I'm Manar Hammam </h1>
+                </div>
+                <img src="images/Header.png" alt="">
+            </div>
+        </div>
+    </header>
+    <div id="about">
+        <div class="container">
+            <h2 class="sub-title">About Me</h2>
+            <div class="about-box">
+                <div class="about-me">
+                    <p class="partial">From a young age, I've been captivated by the world of web development, constantly experimenting
+                        with  website design even without any formal training. As I reminisce about those moments, I've
+                        come to realize that my true calling lies in pursuing a career that merges my passion with
+                        learning. While the decision to transition careers wasn't an easy one, I'm fully committed to
+                        embracing the learning journey ahead of me and realizing the aspirations of my younger self <span class="dots">.....</span></p>
+                        <span id="see-more" >See More</span>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('Education')">Education</p>
+                    <p class="tab-links" onclick="openTab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('Objective')">Objective</p>
+                </div>
+                <div class="more">
+                    <div class="tab-contents active-tab" id="Education">
+                        <div class="education-item">
+                            <h3>Bachelor of Electrical engineering and power machines</h3>
+                            <p>Ain Shams University | 2017 - 2022</p>
+                            <p>Relevant Coursework: C++, Arduino, KNX System, SCADA</p>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li><span>HTML</span>
+                                <div class="skill">
+                                    <span style="width: 90%;" skill-rate="90%"></span>
+                                </div>
+                            </li>
+                            <li><span>CSS</span>
+                                <div class="skill">
+                                    <span style="width: 85%;" skill-rate="85%"></span>
+                                </div>
+                            </li>
+                            <li><span>JavaScript</span>
+                                <div class="skill">
+                                    <span style="width: 70%;" skill-rate="70%"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Objective">
+                        <p>
+                            My future goal is to deepen my expertise in the field of <span>Frontend Web
+                                Developing</span> and leverage my artistic touch to elevate my work. I am
+                            driven by the desire to achieve the level of excellence I have always aspired to and make a
+                            meaningful impact in this industry.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <img class="first-cat" src="/images/about me.png" alt="">
+        <img class="second-cat" src="/images/about me - Copy.png" alt="">
+    </div>
+    <div id="Skills">
+        <div class="container">
+            <h2 class="sub-title">My Skills </h2>
+            <div class="skills-box">
+                <div>
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Skilled in HTML, proficient at crafting structured and semantic markup. Experienced in building
+                        modern, responsive web pages with HTML5. Committed to staying updated with the latest
+                        advancements.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <p>Proficient in CSS, adept at styling and designing visually appealing websites. Skilled in
+                        creating responsive layouts and implementing animations and transitions. Familiar with
+                        frameworks. Passionate about exploring new design trends and techniques.</p>
+                    <a href="">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Strong command of JavaScript, capable of developing interactive and dynamic web applications.
+                        Experienced in DOM manipulation, event handling, and asynchronous programming. Continuously
+                        learning and adapting to
+                        emerging trends in JavaScript development.</p>
+                    <a href="">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-box">
+                <div class="work">
+                    <img src="images/to-dolist.png" alt="">
+                    <div class="layer">
+                        <h3>To-Do List</h3>
+                        <p> With HTML, CSS, and JS, it's able to add, check off, and delete tasks. tasks are saved using LocalStorage for seamless access across sessions.</p>
+                        <a href="https://manarmh02.github.io/todo-list/" title="See Demo" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+               
+                <div class="work">
+                    <img src="images/calculator.png" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>This is a simple calculator app built with HTML, CSS, and JavaScript. It allows users to perform basic arithmetic calculations. Users can toggle between light mode and dark mode </p>
+                        <a href="https://manarmh02.github.io/calculator/" title="See Demo" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/weather app.png" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>Enter any City name, and WeatherApp fetches and displays the current weather conditions in real-time, powered by the OpenWeatherMap API.</p>
+                        <a href="https://manarmh02.github.io/Weather-App/" title="See Demo" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work second-row hide ">
+                    <img src="images/quizapp.png" alt="">
+                    <div class="layer">
+                        <h3>Simple Quiz App</h3>
+                        <p>Made by HTML,CSS & JS <br>Interactive Quiz with Scorekeeping and immediate Feedback Display</p>
+                        <a href="https://manarmh02.github.io/Quiz-App/" title="See Demo" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work second-row hide ">
+                    <img src="images/dashboard.png" alt="">
+                    <div class="layer">
+                        <h3>Dashboard</h3>
+                        <p>HTML/CSS dashboard template. <br> The template includes multiple pages with a clean, minimalistic and responsive design.</p>
+                        <a href="https://manarmh02.github.io/forth-html-css-design/index.html" title="See Demo" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work second-row hide ">
+                    <img src="images/html-css-template.png" alt="">
+                    <div class="layer">
+                        <h3>HTML/CSS Template</h3>
+                        <p>This is a simple HTML/CSS template created following the tutorial by Osama Elzero on YouTube. The template includes basic styling and layout structure for a website.</p>
+                        <a href="https://manarmh02.github.io/third-html-css-design" title="See Demo" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a class="btn unhide-btn">See More</a>
+        </div>
+
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <p><i class="fa-regular fa-envelope"></i>
+                        Manar.hammam99@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>
+                        +02 114 155 9901</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/manarhammam02/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/ManarMH02"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="manar hammam CV- Fresh Frondend Developer.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form method="POST" id="form">
+                        <input type="hidden" name="access_key" value="2e7b2996-3dce-4202-b44f-c5f7c9435a30">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email">
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                        <div id="result"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© 2024 <span>Manar Hammam.</span> All rights reserved. </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
